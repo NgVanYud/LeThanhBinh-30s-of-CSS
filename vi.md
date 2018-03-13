@@ -186,7 +186,7 @@ Bạn có thể tạo một danh sách sắp xếp sử dụng bất cứ mẫu 
 1. `counter-reset` Khởi tạo counter, giá trị là tên của counter. Theo mặc định, counter bắt đầu từ 0. Đặc tính này cũng có thể được sử dụng để thay đổi giá trị của nó với bất cứ số riêng nào  
 2. `counter-incremenet` Sử dụng phần tử có thể đếm được. Mỗi `counter-reset` được khởi tạo, giá trị của counter có thể tăng hoặc giảm  
 3. `counter(name, style)` Hiển thị giá trị của phần counter. Phần lớn được sử dụng trong đặc tính `content`. Hàm này có thể nhận 2 tham số, thứ nhất là tên của counter, cái thứ hai có thể là `decimal` hoặc `upper-roman` (mặc định là `decimal`)  
-4. `counters(counter, string, style)` Hiển thị giá trị của phần counter. Phần lớn được sử dụng trong đặc tính `content`. Hàm này có thể nhận 3 tham số, thứ nhất là tên của counter, cái thứ hai có thể bao gồm một chuỗi mà ở đằng sau counter, cái thứ ba có thể là `decimal` hoặc `upper-roman` (mặc định là `decimal`)  
+4. `counters(counter, string, style)` Hiển thị giá trị của phần counter. Phần lớn được sử dụng trong ~~đặc tính~~(property - **thuộc tính**) `content`. Hàm này có thể nhận 3 tham số, thứ nhất là tên của counter, cái thứ hai có thể bao gồm một chuỗi mà ở đằng sau counter, cái thứ ba có thể là `decimal` hoặc `upper-roman` (mặc định là `decimal`)  
 5. CSS counter có thể đặc biệt hữu ích để tạo danh sách phác thảo, bởi vì ví dụ mới của counter là tự động sinh ra trong thành phần con. Sử dụng hàm `counters()`, tách văn bản có thể chèn vào giữa các tầng khác nhau của các counter lồng nhau.  
 
 **Hỗ trợ trình duyêt**  
@@ -370,7 +370,7 @@ Tạo các bóng giống như `box-shadow` nhưng dựa trên màu cơ bản c�
     }
 ```  
 **Giải thích**  
-The snippet requires a somewhat complex case of stacking contexts to get right, such that the pseudo-element will be positioned underneath the element itself while still being visible.  
+*The snippet requires a somewhat complex case of stacking contexts to get right, such that the pseudo-element will be positioned underneath the element itself while still being visible*.  
 1. `position: relative` ở phần tử cha thiết lập định nghĩa vị trí Cartesian cho các phần tử con.    
 2. `z-index:1` thiếp lập 1 lớp định nghĩa mới  
 3. `: relative` ở phần tử con thiết lập dịnh nghĩa vị trí cho phần tử giả định  
